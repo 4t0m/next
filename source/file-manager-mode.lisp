@@ -39,3 +39,5 @@ Get files from the `download-manager::*default-download-directory*' directory."
                             :input-prompt (file-namestring directory)
                             :completion-function (apply #'open-file-from-directory-completion-fn (list directory))))
       (open-file-fn filename))))
+
+(define-key  "C-x C-f" #'open-file)
